@@ -1,0 +1,12 @@
+aws_region  = "ap-south-1"
+project_name = "terraform-docker-webapp"
+instance_type = "t2.micro"
+
+# Existing EC2 key pair name
+key_name = "YOUR_KEY_PAIR_NAME"
+
+# Better: replace with YOUR_PUBLIC_IP/32
+ssh_cidr = "0.0.0.0/0"
+
+# Public GitHub repository URL
+github_repo = "https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git"
