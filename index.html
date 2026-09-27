@@ -1,14 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Express</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: #ff5722;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .menu {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .menu h2 {
+            font-size: 32px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #ff5722;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Food Express</h1>
-    <h2>CI/CD Pipeline using Jenkins, GitHub, Docker and AWS EC2</h2>
 
-    <p>This application is automatically deployed using Jenkins CI/CD.</p>
+<header>
+    <h1>🍔 Food Express</h1>
 
-    <p>GitHub → Jenkins → Docker → AWS EC2 → Browser</p>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Delicious Food, Delivered Fast!</h2>
+    <p>Order your favorite meals from Food Express.</p>
+    <a href="#menu" class="button">Explore Menu</a>
+</section>
+
+<section class="menu" id="menu">
+    <h2>Our Popular Menu</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🍕 Pizza</h3>
+            <p>Fresh and cheesy pizza made with quality ingredients.</p>
+            <strong>₹299</strong>
+        </div>
+
+        <div class="card">
+            <h3>🍔 Burger</h3>
+            <p>Delicious crispy burgers with fresh vegetables.</p>
+            <strong>₹199</strong>
+        </div>
+
+        <div class="card">
+            <h3>🍜 Noodles</h3>
+            <p>Hot and tasty noodles prepared with fresh ingredients.</p>
+            <strong>₹179</strong>
+        </div>
+
+    </div>
+</section>
+
+<section class="hero" id="about">
+    <h2>About Food Express</h2>
+    <p>Fast, simple and delicious food delivery.</p>
+</section>
+
+<footer>
+    <p>© 2026 Food Express</p>
+    <p>Deployed using Jenkins CI/CD + Docker + AWS EC2</p>
+</footer>
+
 </body>
 </html>
