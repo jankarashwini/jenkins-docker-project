@@ -1,4 +1,4 @@
-🚀 Food Express – CI/CD Pipeline Using Jenkins, GitHub, Docker and AWS EC2
+**🚀 Food Express – CI/CD Pipeline Using Jenkins, GitHub, Docker and AWS EC2**
 
 📌 Project Overview
 
